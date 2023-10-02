@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="box">
+    <div class="title_container">
+        <h4 class="title">Convert Temperature</h4>
+        </div>
+    <div class="temp_calculator">
+        <form action="" name="Form">
+            <div class="temp_calculator_inputs">
+                <div class="calculator_value">
+                    <label for="">Value To Convert:</label>
+                    <input type="text" placeholder="0" name="value" id="input_value">
+                </div>
+                <div class="calculator_input">
+                    <label for="">From:</label>
+                    <select name="input" id="input">
+                        <option value="celsius">Celsius (°C)</option>
+                        <option value="fahrenheit">Fahrenheit (°F)</option>
+                        <option value="kelvin">Kelvin (K)</option>
+                    </select>
+                <!--</div>
+                <div class="calculator_input">-->
+                    <label for="">To:</label>
+                    <select name="output" id="output">
+                        <option value="celsius">Celsius (°C)</option>
+                        <option value="fahrenheit">Fahrenheit (°F)</option>
+                        <option value="kelvin">Kelvin (K)</option>
+                    </select>
+                </div>
+            </div>
+            <button type="button" id="clear" class="cal-btn" onclick="reset()">Clear</button>
+            <button type="button" id="convert" class="cal-btn" onclick="convertTemperature()">Convert</button>
+            <div class="result_area">
+                <label for="">Answer:</label>
+                <input type="text" value="" id="result">
+            </div>
+        </form>
+    </div>
+</div>
+
+
+ 
+    <script src="script.js"></script>
+</body>
+</html>
